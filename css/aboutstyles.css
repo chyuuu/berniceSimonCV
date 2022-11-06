@@ -1,0 +1,75 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  color: rgba(181, 150, 205, 0.75);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #B596CD;
+}
+
+img {
+  border-radius: 50px;
+  border: 5px solid rgba(181, 150, 205, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.container {
+  margin: 4vh auto;
+}
+
+.navi {
+  font-size: 0.90rem;
+}
+
+.row {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.container-fluid {
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: 900;
+  text-shadow: 5px 3px 0px rgba(181, 150, 205, 0.25);
+  line-height: 80%;
+}
+
+.header {
+  color: #B596CD;
+}
+
+.disclaimer, .cc {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.leftcol, .centercol {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
