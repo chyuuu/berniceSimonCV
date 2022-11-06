@@ -1,7 +1,21 @@
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-container {
-  background-color: red;
+/* container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
+img {
+  width: 400px;
+  height: 400px;
 }
+
+/* .sec1, .intro {
+  gap: 20px;
+  padding: 0 20px 0 20px;
+} */
