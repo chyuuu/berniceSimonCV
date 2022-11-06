@@ -33,6 +33,10 @@ img {
   border: 5px solid rgba(181, 150, 205, 0.25);
 }
 
+.container {
+  margin: 4vh auto;
+}
+
 .navi {
   font-size: 0.90rem;
 }
@@ -44,7 +48,7 @@ img {
 
 .container-fluid {
   padding-top: 10%;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 
 .name {
