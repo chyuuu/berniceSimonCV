@@ -24,11 +24,11 @@ a:hover {
 }
 
 img {
+  border-radius: 50px;
+  border: 5px solid rgba(181, 150, 205, 0.25);
   margin-left: auto;
   margin-right: auto;
   display: block;
-  border-radius: 50px;
-  border: 5px solid rgba(181, 150, 205, 0.25);
 }
 
 .container {
@@ -69,7 +69,7 @@ img {
   text-decoration: underline;
 }
 
-/* .col-xl-5 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-} */
+.leftcol, .centercol {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
