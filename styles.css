@@ -68,3 +68,8 @@ img {
 .link {
   text-decoration: underline;
 }
+
+.centercol {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
