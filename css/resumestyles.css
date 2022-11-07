@@ -95,3 +95,8 @@ img {
 .skills {
   list-style: inherit; !important
 }
+
+.btn-bd-download {
+  border-color: #B596CD;
+  font-weight: bold;
+}
