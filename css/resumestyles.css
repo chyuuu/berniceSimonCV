@@ -99,3 +99,8 @@ img {
   border-color: #B596CD;
   font-weight: bold;
 }
+
+.caption {
+  display: inline-block;
+  font-size: 0.60rem;
+}
