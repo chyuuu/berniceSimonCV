@@ -36,6 +36,11 @@ img {
   display: block;
 }
 
+.navbar {
+  padding-left: 2.65rem;
+  font-family: 'Inter', sans-serif; !important
+}
+
 .aboutlink {
   font-weight: bold;
   text-decoration: underline;
@@ -47,7 +52,6 @@ img {
 
 .navi {
   font-size: 0.90rem;
-  text-align: right;
 }
 
 .row {
@@ -70,8 +74,8 @@ img {
   color: #B596CD;
 }
 
-.disclaimer, .cc {
-  font-size: 0.75rem;
+.cc {
+  font-size: 0.60rem;
   font-style: italic;
 }
 
