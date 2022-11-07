@@ -16,16 +16,16 @@ ul {
 }
 
 a:link {
-  color: #000;
+  color: rgba(181, 150, 205, 1);
 }
 
 a:visited {
-  color: rgba(181, 150, 205, 0.75);
+  color: rgba(181, 150, 205, 0.60);
 }
 
 a:hover {
   text-decoration: none;
-  color: #B596CD;
+  color: rgba(181, 150, 270, 1);
 }
 
 img {
@@ -87,6 +87,10 @@ img {
   margin: 0;
 }
 
-.workplace {
+.workplace, .school {
   font-weight: bold;
+}
+
+.skills {
+  list-style: inherit; !important
 }
