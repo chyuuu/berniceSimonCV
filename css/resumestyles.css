@@ -36,6 +36,10 @@ img {
   display: block;
 }
 
+.skills {
+  list-style: url("./images/flower.svg"); !important
+}
+
 .navbar {
   padding-left: 2.65rem;
   font-family: 'Inter', sans-serif; !important
@@ -83,21 +87,12 @@ img {
   text-decoration: underline;
 }
 
-/* .leftcol, .centercol {
-  padding-left: 2rem;
-  padding-right: 2rem;
-} */
-
 .experience {
   margin: 0;
 }
 
 .workplace, .school {
   font-weight: bold;
-}
-
-.skills {
-  list-style: inherit; !important
 }
 
 .btn-bd-download {
