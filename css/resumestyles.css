@@ -109,3 +109,7 @@ img {
 .spiel {
   display: inline;
 }
+
+.caps {
+  text-transform: uppercase; !important
+}
