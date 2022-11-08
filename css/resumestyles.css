@@ -101,6 +101,11 @@ img {
 }
 
 .caption {
-  display: inline-block;
-  font-size: 0.60rem;
+  margin-left: 0.5rem;
+  font-size: 0.70rem;
+  text-transform: none; !important
+}
+
+.spiel {
+  display: inline;
 }
