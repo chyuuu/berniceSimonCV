@@ -37,6 +37,7 @@ img {
 
 .container {
   margin: 4vh auto;
+  align-items: baseline;
 }
 
 .navi {
