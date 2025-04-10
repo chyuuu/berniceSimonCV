@@ -89,9 +89,14 @@ img {
 
 .experience {
   margin: 0;
+  font-weight: bold;
 }
 
-.workplace, .school {
+.workplace {
+  font-weight: normal;
+}
+
+.school {
   font-weight: bold;
 }
 
