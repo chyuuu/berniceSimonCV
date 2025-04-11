@@ -3,6 +3,19 @@ body {
   margin: 0;
 }
 
+pre[class*="language-r"], code[class*="language-r"], pre[class*="language-python"], code[class*="language-python"] {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  overflow-x: hidden !important;
+}
+
+.btn {
+  border-color: #B596CD;
+  color: #B596CD;
+  font-weight: bold;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -60,7 +73,7 @@ img {
   line-height: 80%;
 }
 
-.header {
+.name {
   color: #B596CD;
 }
 
@@ -73,7 +86,17 @@ img {
   text-decoration: underline;
 }
 
-/* .leftcol, .centercol {
-  padding-left: 2rem;
-  padding-right: 2rem;
-} */
+.leftcol {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  overflow-y: auto;
+  padding-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .leftcol {
+    position: static;
+    padding-top: 0;
+  }
+}
