@@ -68,8 +68,10 @@ img {
 }
 
 .name {
-  font-size: 4rem;
-  font-weight: 900;
+  font-family: "Pattaya", sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: normal;
   text-shadow: 5px 3px 0px rgba(181, 150, 205, 0.25);
   line-height: 80%;
 }
