@@ -1,0 +1,50 @@
+/* body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+} */
+
+.container {
+    margin: 4vh auto;
+}
+
+.navi {
+    font-size: 0.90rem;
+}
+
+.name {
+    color: #B596CD;
+    font-family: "Pattaya", sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: normal;
+    text-shadow: 5px 3px 0px rgba(181, 150, 205, 0.25);
+    line-height: 80%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: rgba(181, 150, 205, 1);
+}
+
+a:visited {
+    color: rgba(181, 150, 205, 0.60);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(181, 150, 270, 1);
+}
+
+.redirectlink {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.link {
+    text-decoration: underline;
+}

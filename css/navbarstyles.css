@@ -1,0 +1,22 @@
+nav {
+  font-family: 'Inter', sans-serif;
+  text-transform: lowercase;
+}
+
+nav a.nav-link {
+  color: rgba(181, 150, 205, 1);
+}
+
+/* a:visited.nav-link {
+  color: rgba(181, 150, 205, 0.60);
+} */
+
+nav .nav-link:hover {
+  text-decoration: underline;
+  color: rgba(181, 150, 100, 1);
+}
+
+nav #nav-btn {
+  border-color: #B596CD;
+  color: #B596CD;
+}
