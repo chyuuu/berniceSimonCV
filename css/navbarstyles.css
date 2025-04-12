@@ -4,6 +4,7 @@ nav {
 }
 
 nav a.nav-link {
+  font-weight: bold;
   color: rgba(181, 150, 205, 1);
 }
 
@@ -13,7 +14,7 @@ nav a.nav-link {
 
 nav .nav-link:hover {
   text-decoration: underline;
-  color: rgba(181, 150, 100, 1);
+  color: rgb(216, 198, 253);
 }
 
 nav #nav-btn {

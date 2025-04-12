@@ -12,3 +12,18 @@ img {
 .header {
   color: #B596CD;
 }
+
+a.redirectlink:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(181, 150, 205, 1);
+}
+
+a.redirectlink:visited {
+  color: rgba(82, 49, 108, 0.6);
+}
+
+a.redirectlink:hover {
+  text-decoration: underline;
+  color: rgb(216, 198, 253);
+}
