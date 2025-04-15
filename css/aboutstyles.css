@@ -27,7 +27,7 @@ a.redirectlink:link {
 }
 
 a.redirectlink:visited {
-  color: rgba(223, 200, 240, 0.785);
+  color: rgba(181, 150, 205, 1);
 }
 
 a.redirectlink:hover {
