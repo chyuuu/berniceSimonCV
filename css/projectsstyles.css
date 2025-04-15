@@ -11,6 +11,11 @@ h2 {
   color: #B596CD !important; 
 }
 
+p.codeSnippet {
+  font-family: 'JetBrains Mono', sans-serif !important;
+  font-weight: 200;
+}
+
 pre[class*="language-r"], code[class*="language-r"], pre[class*="language-python"], code[class*="language-python"] {
   white-space: pre-wrap !important;
   word-break: break-word !important;
@@ -69,7 +74,8 @@ img {
   top: .35rem;
   right: 1rem;
   z-index: 999;
-  background-color: #B596CD;
+  /* background-color: #B596CD; */
+  background-color: rgba(175, 166, 166, 0.366);
   color: white;
   border: none;
   padding: 0.75rem 1rem;
@@ -82,10 +88,10 @@ img {
 
 #backToTop {
   position: fixed;
-  top: 3.5rem;
+  bottom: 1rem;
   right: 1rem;
   z-index: 999;
-  background-color: #B596CD;
+  background-color: rgba(175, 166, 166, 0.366);
   color: white;
   border: none;
   padding: 0.75rem 1rem;
@@ -97,7 +103,7 @@ img {
 }
 
 #toggleAll:hover, #backToTop:hover {
-  background-color: #555;
+  background-color: #B596CD;
 }
 
 /* #hideAll {

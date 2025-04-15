@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <link rel="icon" type="image/x-icon" href="./images/flower.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>blood, sweat, tears</title>
@@ -10,10 +11,26 @@
   <meta name="author" content="bernice simon" />
   <meta name="keywords" content="bernice simon cv resume" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" /> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-r.min.js"></script>
+  <script>Prism.highlightAll();</script> -->
+
+  <link rel="stylesheet" href="./highlight-offline/styles/base16/ros-pine-dawn.min.css">
+  <!-- Link to local JavaScript file -->
+  <script src="./highlight-offline/highlight.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      hljs.highlightAll();
+    });
+  </script>
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./css/projectsstyles.css" type="text/css" />
+
 </head>
 
 <body>
@@ -32,10 +49,11 @@
       <div class="container col-xl-10 centercol">
         <ul>
           <h2>coding examples</h2>
+          <p>here are some examples of code I've written to help with effeciency inititatives within my current company</p>
 
           <!-- python code -->
-          <p>python csv file splitter:</p>
-          <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#pythonCode" aria-expanded="false" aria-controls="pythonCode">click to expand</button>
+      <p class="codeSnippet">python csv file splitter:</p>
+        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#pythonCode" aria-expanded="false" aria-controls="pythonCode">click to expand</button>
             <div class="collapse code-collapse mt-3" id="pythonCode">
               <pre><code class="language-python">
 import pandas as pd
@@ -96,16 +114,16 @@ with pd.ExcelWriter("merged.xlsx", engine="openpyxl") as writer:
         
 print("done merging")
 print("Data successfully saved across multiple sheets!")                
-                </code></pre>
+              </code></pre>
             </div>
           <br />
           <br />
 
 
           <!-- r code -->
-          <p>r code icf dates:</p>
-          <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#rCode1" aria-expanded="false"
-            aria-controls="rCode1">click to expand</button>
+      <p class="codeSnippet">r code icf dates:</p>
+        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#rCode1" aria-expanded="false"
+          aria-controls="rCode1">click to expand</button>
             <div class="collapse code-collapse mt-3" id="rCode1">
               <!-- use https://www.freeformatter.com/html-escape.html -->
               <pre><code class="language-r">
@@ -185,15 +203,15 @@ timeline_map_edc_ordering <- function(order_protocols) {
   
   return(final_filter)
 }
-                 </code></pre>
+              </code></pre>
             </div>
-            <br />
-            <br />
+          <br />
+          <br />
 
 
           <!-- r code -->
-          <p>r code, filter for latest visit date</p>
-          <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#rCode2" aria-expanded="false" aria-controls="rCode2">click to expand</button>
+      <p class="codeSnippet">r code, filter for latest visit date</p>
+        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#rCode2" aria-expanded="false" aria-controls="rCode2">click to expand</button>
           <div class="collapse code-collapse mt-3" id="rCode2">
             <!-- use https://www.freeformatter.com/html-escape.html -->
             <pre><code class="language-r">
@@ -216,11 +234,12 @@ filter_latest_date <- function(df) {
   
   return(df_latest)
 }
-        </code></pre>
+            </code></pre>
           </div>
-          <br />
-          <br />
-          <hr>
+        <br />
+        <br />
+
+        <hr>
 
           <h2>technical writing samples</h2>
           <p>this is currently outdated and working on it!</p>
@@ -241,10 +260,10 @@ filter_latest_date <- function(df) {
     </div>
   </div>
 
-  <!-- scripts start here -->
-   
   <!-- backToTop button -->
-  <button id="backToTop" title="teleporter">🚀</button>
+  <button id="backToTop" title="back to top">
+    <img src="./images/rocketship.png">
+  </button>
   <script>
     const backToTopBtn = document.getElementById("backToTop");
 
@@ -293,12 +312,6 @@ filter_latest_date <- function(df) {
       toggleIcon.src = areAllShown ? "./images/closed_eye.png" : "./images/open_eye.png";
     });
   </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-r.min.js"></script>
-
-  <script>Prism.highlightAll();</script>
 
   <script>
     (async function() {

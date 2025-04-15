@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Highlight Test Offline</title>
+  
+  <!-- Link to local CSS file -->
+  <link rel="stylesheet" href="./highlight-offline/styles/base16/ros-pine-dawn.min.css">
+  
+  <!-- Link to local JavaScript file -->
+  <script src="./highlight-offline/highlight.min.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      hljs.highlightAll();
+    });
+  </script>
+</head>
+<body>
+  <h2>R Example</h2>
+  <pre><code class="language-r">
+summary(lm(mpg ~ wt + hp, data = mtcars))
+  </code></pre>
+</body>
+</html>

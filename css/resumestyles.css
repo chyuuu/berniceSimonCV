@@ -70,12 +70,19 @@ a#downloadcv.btn.btn-bd-download:hover, #olderexp.btn.btn-outline-secondary:hove
   display: inline;
 }
 
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-height: 20px;
+}
+
 #backToTop {
   position: fixed;
-  top: .5rem;
+  bottom: 1rem;
   right: 1rem;
   z-index: 999;
-  background-color: #B596CD;
+  background-color: rgba(175, 166, 166, 0.366);
   color: white;
   border: none;
   padding: 0.75rem 1rem;
@@ -87,5 +94,5 @@ a#downloadcv.btn.btn-bd-download:hover, #olderexp.btn.btn-outline-secondary:hove
 }
 
 #backToTop:hover {
-  background-color: #555;
+  background-color: #B596CD;
 }
