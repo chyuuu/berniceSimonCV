@@ -7,13 +7,14 @@ body {
   margin: 0;
 }
 
-h2 {
-  color: #B596CD !important; 
+body h2 {
+  color: #B596CD; 
 }
 
 p.codeSnippet {
-  font-family: 'JetBrains Mono', sans-serif !important;
-  font-weight: 200;
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 500;
+  font-size: smaller;
 }
 
 pre[class*="language-r"], code[class*="language-r"], pre[class*="language-python"], code[class*="language-python"] {
