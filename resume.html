@@ -275,17 +275,21 @@
 
   <script>Prism.highlightAll();</script>
 
+  <!-- backToTop button -->
   <button id="backToTop" title="teleporter">🚀</button>
   <script>
     const backToTopBtn = document.getElementById("backToTop");
 
     window.onscroll = function () {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      if (
+        document.body.scrollTop > 150 || 
+        document.documentElement.scrollTop > 150
+      ) {
         backToTopBtn.style.display = "block";
       } else {
         backToTopBtn.style.display = "none";
       }
-    };
+    }
 
     backToTopBtn.addEventListener("click", function () {
       window.scrollTo({

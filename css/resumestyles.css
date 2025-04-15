@@ -72,7 +72,7 @@ a#downloadcv.btn.btn-bd-download:hover, #olderexp.btn.btn-outline-secondary:hove
 
 #backToTop {
   position: fixed;
-  bottom: 1rem;
+  top: .5rem;
   right: 1rem;
   z-index: 999;
   background-color: #B596CD;
@@ -82,7 +82,7 @@ a#downloadcv.btn.btn-bd-download:hover, #olderexp.btn.btn-outline-secondary:hove
   border-radius: 50%;
   font-size: 1rem;
   cursor: pointer;
-  display: block;
+  display: none;
   transition: opacity 0.3s;
 }
 

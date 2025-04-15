@@ -24,14 +24,19 @@
   <div class="d-flex flex-column justify-content-center py-5 px-1">
     <div class="row align-items-center">
       <!-- center colmn -->
-      <div class="container col-xl-9 centercol">
+
+      <!-- <div class="container col-xl-2 leftcol">
+
+      </div> -->
+
+      <div class="container col-xl-10 centercol">
         <ul>
           <h2>coding examples</h2>
 
           <!-- python code -->
           <p>python csv file splitter:</p>
           <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#pythonCode" aria-expanded="false" aria-controls="pythonCode">click to expand</button>
-            <div class="collapse mt-3" id="pythonCode">
+            <div class="collapse code-collapse mt-3" id="pythonCode">
               <pre><code class="language-python">
 import pandas as pd
 
@@ -101,7 +106,7 @@ print("Data successfully saved across multiple sheets!")
           <p>r code icf dates:</p>
           <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#rCode1" aria-expanded="false"
             aria-controls="rCode1">click to expand</button>
-            <div class="collapse mt-3" id="rCode1">
+            <div class="collapse code-collapse mt-3" id="rCode1">
               <!-- use https://www.freeformatter.com/html-escape.html -->
               <pre><code class="language-r">
 timeline_map_edc_ordering <- function(order_protocols) {
@@ -189,7 +194,7 @@ timeline_map_edc_ordering <- function(order_protocols) {
           <!-- r code -->
           <p>r code, filter for latest visit date</p>
           <button class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#rCode2" aria-expanded="false" aria-controls="rCode2">click to expand</button>
-          <div class="collapse mt-3" id="rCode2">
+          <div class="collapse code-collapse mt-3" id="rCode2">
             <!-- use https://www.freeformatter.com/html-escape.html -->
             <pre><code class="language-r">
 # dynamic filtering
@@ -218,6 +223,7 @@ filter_latest_date <- function(df) {
           <hr>
 
           <h2>technical writing samples</h2>
+          <p>this is currently outdated and working on it!</p>
             <li>
               <a href="./files/berniceSimonPurchasingGuide.pdf" target="_blank">purchasing guide</a>
             </li>
@@ -235,18 +241,23 @@ filter_latest_date <- function(df) {
     </div>
   </div>
 
+  <!-- scripts start here -->
+   
   <!-- backToTop button -->
   <button id="backToTop" title="teleporter">🚀</button>
   <script>
     const backToTopBtn = document.getElementById("backToTop");
 
     window.onscroll = function () {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      if (
+        document.body.scrollTop > 150 || 
+        document.documentElement.scrollTop > 150
+      ) {
         backToTopBtn.style.display = "block";
       } else {
         backToTopBtn.style.display = "none";
       }
-    };
+    }
 
     backToTopBtn.addEventListener("click", function () {
       window.scrollTo({
@@ -266,7 +277,7 @@ filter_latest_date <- function(df) {
     let areAllShown = false; // track state
 
     toggleAllBtn.addEventListener("click", function () {
-      const collapsibles = document.querySelectorAll('.collapse');
+      const collapsibles = document.querySelectorAll('.code-collapse');
       collapsibles.forEach(function (el) {
         const bsCollapse = new bootstrap.Collapse(el, {
           toggle: false
