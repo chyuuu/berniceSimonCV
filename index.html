@@ -5,6 +5,7 @@
   <link rel="icon" type="image/x-icon" href="./images/flower.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>welcome!</title>
+  <meta charset="UTF-8" />
   <meta name="description" content="oh look a description! hire me pls" />
   <meta name="author" content="bernice simon" />
   <meta name="keywords" content="bernice simon cv resume" />
@@ -14,18 +15,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=inter" type="text/css" /> -->
   <link rel="stylesheet" href="./css/indexstyles.css" type="text/css" />
-  <meta charset="UTF-8" />
-  <!-- <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
-  </style> -->
 </head>
 
 <body>
 
   <div id="navbar"></div>
 
-  <div class="d-flex flex-column min-vh-100 justify-content-around px-5 py-5">
+  <div class="d-flex flex-column justify-content-around px-5 py-5">
+  <!-- <div class="d-flex flex-column justify-content-around px-5 py-5"></div> -->
     <div class="row align-items-center">
       
       <div class="col-xl-3 box">
@@ -35,9 +32,50 @@
       <!-- center colmn -->
       <div class="col-xl-5 box">
         <h2 class="header">hello there!</h2>
-        <p>I enjoy lower case stylization and job hunting. I’m joking, I dislike job hunting (though do ping me if you find someone who does!), but I enjoy making my own personal website enough (yes, I coded this without AI!) to (maybe) impress recruiters and HR. I hope you like it so far! stick around and feel free to read my <a class="redirectlink"
-            href="./about.html">about</a> section and learn about some <a class="redirectlink" href="./projects.html">projects</a> I’ve worked on and how desperate I am to wow you. <br /><br />currently working on a dark mode toggle button in case this is burning your eyes and the projects and testimonials page.</p>
-        <p class="disclaimer">disclaimer: lower case stylization can of course be changed if you need me doing formal technical writing. unless that’s your thing.</p>
+        <p>
+          I enjoy lower case stylization and job hunting. I’m joking, I dislike job hunting (though do ping me if you find someone who does!), but I did enjoy making my own personal website enough (yes, I coded this without AI!) to (maybe) impress recruiters and HR. I hope you like it so far! stick around and feel free to read my <a class="redirectlink"
+            href="./about.html">about</a> section and learn about some small <a class="redirectlink" href="./projects.html">projects</a> I’ve worked on and how desperate I am to wow you.
+        </p>
+
+
+        <p class="disclaimer">
+          <i>
+            note: the lower case stylization can of course be changed if you need me doing formal technical writing. it's just...you know, I wanted it on my website :) hope that's okay!
+
+          </i>
+        </p>
+        <hr>
+        
+        <h5>
+          currently working on:
+        </h5>
+
+        <ul>
+          <li>a dark mode toggle button (in case this is burning your eyes)</li>
+        </ul>
+
+        <h5>
+          recent updates:
+        </h5>
+
+        <ul>
+          <li>
+            added 'click to expand' buttons on long form code/sections
+          </li>
+          <li>
+            added backToTop button on projects and resume page
+          </li>
+          <li>
+            added a showAll/hideAll toggle button on projects page
+          </li>
+          <li>
+            added coding snippets to projects page
+          </li>
+          <li>
+            updated resume with QB work
+          </li>
+        </ul>
+
       </div>
 
       <!-- right column -->
@@ -52,20 +90,7 @@
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-r.min.js"></script>
   <script>Prism.highlightAll();</script>
-  <!-- <script>
-    fetch('navbar.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-      });
-  </script>
-  <script>
-    fetch('sidebar.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('sidebar').innerHTML = data;
-      });
-  </script> -->
+
   <script>
     (async function() {
       const navbarData = await fetch('navbar.html').then(res => res.text());

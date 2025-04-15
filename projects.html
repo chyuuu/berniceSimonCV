@@ -13,24 +13,20 @@
   <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=inter" type="text/css" /> -->
   <link rel="stylesheet" href="./css/projectsstyles.css" type="text/css" />
-  <!-- <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
-  </style> -->
 </head>
 
 <body>
 
   <div id="navbar"></div>
       
-      <div class="d-flex flex-column min-vh-100 justify-content-center px-5 py-5">
+      <!-- <div class="d-flex flex-column min-vh-100 justify-content-center"> -->
+        <div class="d-flex flex-column justify-content-center py-5 px-1">
         <div class="row align-items-center">
 
-          <div class="col-xl-3">
+          <!-- <div class="col-xl-3">
             <div id="sidebar"></div>
-          </div>
+          </div> -->
 
       <!-- center colmn -->
       <div class="container col-xl-9 centercol">
@@ -222,25 +218,24 @@ filter_latest_date <- function(df) {
 }
         </code></pre>
           </div>
-        <br />
-        <br />
-        
-        <h2>technical writing samples</h2>
-          <li>
-            <a href="./files/berniceSimonPurchasingGuide.pdf" target="_blank">purchasing guide</a>
-          </li>
-          <li>
-            <a href="./files/enzymeLabFinal.pdf" target="_blank">my really pretty lab report</a>
-          </li>
-          <li>
-            <a href="./files/comparisonsGuide.pdf" target="_blank">excel sheet comparisons guide</a>
-          </li>
-          <li>
-            <a href="./files/updatingNewList.pdf" target="_blank">updating excel sheet</a>
-          </li>
+          <br />
+          <br />
+          <hr>
+          <h2>technical writing samples</h2>
+            <li>
+              <a href="./files/berniceSimonPurchasingGuide.pdf" target="_blank">purchasing guide</a>
+            </li>
+            <li>
+              <a href="./files/enzymeLabFinal.pdf" target="_blank">my really pretty lab report</a>
+            </li>
+            <li>
+              <a href="./files/comparisonsGuide.pdf" target="_blank">excel sheet comparisons guide</a>
+            </li>
+            <li>
+              <a href="./files/updatingNewList.pdf" target="_blank">updating excel sheet</a>
+            </li>
         </ul>
-        </div>
-
+      </div>
     </div>
   </div>
 
@@ -302,10 +297,10 @@ filter_latest_date <- function(df) {
 <script>
   (async function() {
     const navbarData = await fetch('navbar.html').then(res => res.text());
-    const sidebarData = await fetch('sidebar.html').then(res => res.text());
+    // const sidebarData = await fetch('sidebar.html').then(res => res.text());
     
     document.getElementById('navbar').innerHTML = navbarData;
-    document.getElementById('sidebar').innerHTML = sidebarData;
+    // document.getElementById('sidebar').innerHTML = sidebarData;
     
     // add the 'active' class after the navbar is loaded
     const path = window.location.pathname;
