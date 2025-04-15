@@ -2,6 +2,7 @@
 <html lang="en">
   
 <head>
+
   <link rel="icon" type="image/x-icon" href="./images/flower.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>about me</title>
@@ -10,77 +11,39 @@
   <meta name="author" content="bernice simon" />
   <meta name="keywords" content="bernice simon cv resume" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./css/aboutstyles.css" type="text/css" />
+  
 </head>
 
 <body>
 
-    <div id="navbar"></div>
+  <div id="navbar"></div>
+  <div class="d-flex flex-column justify-content-around px-5 py-5">
+    <div class="row align-items-center">
 
-  <!-- <div class="container-fluid">
-    <div class="row align-items-center justify-content-center"> -->
-
-      <!-- <div class="d-flex flex-column min-vh-100 justify-content-around px-5 py-5"> -->
-      <div class="d-flex flex-column justify-content-around px-5 py-5">
-        <div class="row align-items-center">
-
-      <!-- center colmn -->
       <div class="container col-xl-8 centercol px-5">
+
         <h2 class="header">a bit more about me</h2>
-        <p>I'm a proud Filipino-American (yes I am a citizen and yes I am authorized to work in the US), and was raised in Maryland! believe it or not, I actually don’t like crabs, but I do love Maryland. I have a background in chemistry and
-          biochemistry, but that never stopped me from pursuing other interests like coding, design, light project management, and now, clinical data management! I like to think I can do almost anything you throw at me. that's thanks to my inability to say no (just kidding, I am much better at this now) so I picked up on whatever I
-          was needed for in the moment, but at least I can say I am pretty useful to have around. I am an insanely quick learner!
+        <p>I'm a proud Filipino-American (yes I am a citizen and yes I am authorized to work in the US), and was raised in Maryland! believe it or not, I actually don’t like crabs, but I do love Maryland. I have a background in chemistry and biochemistry, but that never stopped me from pursuing other interests like coding, design, light project management, and now, clinical data management! I like to think I can do almost anything you throw at me. that's thanks to my inability to say no (just kidding, I am much better at this now) so I picked up on whatever I was needed for in the moment, but at least I can say I am pretty useful to have around. I am an insanely quick learner!
           <br /><br />
-          outside of work, I take pride in the <a
-            class="redirectlink" href="https://www.reddit.com/r/NoFeeAC/" target="_blank">r/nofeeac</a> community that I have the honor in running with some great friends. volunteer work counts towards experience, too, right? we wanted to build a community of giving and kindness in the animal crossing world, and r/nofeeac was born. check out an article about us in <a class="redirectlink"
-            href="https://www.theguardian.com/games/2020/jun/10/animal-crossing-new-horizon-capitalist-dystopia-subreddit" target="_blank">the guardian</a>!
-          we’ve also done interviews for vox, though that article was never published. it was still pretty cool to do, though :) 
+        outside of work, I take pride in the <a class="redirectlink" href="https://www.reddit.com/r/NoFeeAC/" target="_blank">r/nofeeac</a> community that I have the honor in running with some great friends. volunteer work counts towards experience, too, right? we wanted to build a community of giving and kindness in the animal crossing world, and r/nofeeac was born. check out an article about us in <a class="redirectlink" href="https://www.theguardian.com/games/2020/jun/10/animal-crossing-new-horizon-capitalist-dystopia-subreddit" target="_blank">the guardian</a>! we’ve also done interviews for vox, though that article was never published. it was still pretty cool to do, though :) 
           <br /><br /> 
-          more often, you’ll find me hiking or exploring a new museum or exhibit in DC. I touch grass too, sometimes! and as of 15 apr 2025, I have a 601 day streak for French on duolingo! 🔥 <br /><br />did I perhaps... pique your interest? want to chat some more? <a class="redirectlink"
-            href="mailto:bernice.simon01@gmail.com" target="_blank">email me</a> and/or let’s connect on
-          <a class="redirectlink" href="https://www.linkedin.com/in/bernice-simon/" target="_blank">linkedin</a>!
+        more often, you’ll find me hiking or exploring a new museum or exhibit in DC. I touch grass too, sometimes! and as of 15 apr 2025, I have a 601 day streak for French on duolingo! 🔥 
+          <br /><br />
+        did I perhaps... pique your interest? want to chat some more? <a class="redirectlink" href="mailto:bernice.simon01@gmail.com" target="_blank">email me</a> and/or let’s connect on <a class="redirectlink" href="https://www.linkedin.com/in/bernice-simon/" target="_blank">linkedin</a>!
         </p>
       </div>
 
-      <!-- right column -->
       <div class="col-xl-4 d-flex align-items-center py-5"> 
         <img class="img-fluid" src="./images/selfie2.jpg" alt="irl picture of me">
       </div>
 
     </div>
-  </div>
+  </div>  
 
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-r.min.js"></script>
-
-  <script>Prism.highlightAll();</script>
-
-  <script>
-    (async function() {
-      const navbarData = await fetch('navbar.html').then(res => res.text());
-      // const sidebarData = await fetch('sidebar.html').then(res => res.text());
-      
-      document.getElementById('navbar').innerHTML = navbarData;
-      // document.getElementById('sidebar').innerHTML = sidebarData;
-
-      // add the 'active' class after the navbar is loaded
-      const path = window.location.pathname;
-      
-      if (path.includes('index.html') || path === '/' || path === '/index') {
-        document.getElementById('nav-home')?.classList.add('active');
-      } else if (path.includes('about.html')) {
-        document.getElementById('nav-about')?.classList.add('active');
-      } else if (path.includes('projects.html')) {
-        document.getElementById('nav-projects')?.classList.add('active');
-      } else if (path.includes('resume.html')) {
-        document.getElementById('nav-resume')?.classList.add('active');
-      }
-      })();
-  </script>
+  <script src="js/navbarSidebar.js"></script>
 
 </body>
 

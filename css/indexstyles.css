@@ -25,3 +25,7 @@ a.redirectlink:hover {
   text-decoration: underline;
   color: rgba(223, 200, 240, 0.785);
 }
+
+.note {
+  font-size: smaller;
+}
