@@ -20,14 +20,9 @@
 
   <div id="navbar"></div>
       
-      <!-- <div class="d-flex flex-column min-vh-100 justify-content-center"> -->
-        <div class="d-flex flex-column justify-content-center py-5 px-1">
-        <div class="row align-items-center">
-
-          <!-- <div class="col-xl-3">
-            <div id="sidebar"></div>
-          </div> -->
-
+  <!-- <div class="d-flex flex-column min-vh-100 justify-content-center"> -->
+  <div class="d-flex flex-column justify-content-center py-5 px-1">
+    <div class="row align-items-center">
       <!-- center colmn -->
       <div class="container col-xl-9 centercol">
         <ul>
@@ -221,6 +216,7 @@ filter_latest_date <- function(df) {
           <br />
           <br />
           <hr>
+
           <h2>technical writing samples</h2>
             <li>
               <a href="./files/berniceSimonPurchasingGuide.pdf" target="_blank">purchasing guide</a>
@@ -239,83 +235,82 @@ filter_latest_date <- function(df) {
     </div>
   </div>
 
-<!-- backToTop button -->
-<button id="backToTop" title="teleporter">🚀</button>
-<script>
-  const backToTopBtn = document.getElementById("backToTop");
+  <!-- backToTop button -->
+  <button id="backToTop" title="teleporter">🚀</button>
+  <script>
+    const backToTopBtn = document.getElementById("backToTop");
 
-  window.onscroll = function () {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      backToTopBtn.style.display = "block";
-    } else {
-      backToTopBtn.style.display = "none";
-    }
-  };
-
-  backToTopBtn.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-</script>
-
-<!-- merged toggle button -->
-<button id="toggleAll">
-  <img id="toggleIcon" title="click to show/hide all" src="./images/open_eye.png">
-</button>
-<script>
-  const toggleAllBtn = document.getElementById("toggleAll");
-  const toggleIcon = document.getElementById("toggleIcon");
-  let areAllShown = false; // track state
-
-  toggleAllBtn.addEventListener("click", function () {
-    const collapsibles = document.querySelectorAll('.collapse');
-    collapsibles.forEach(function (el) {
-      const bsCollapse = new bootstrap.Collapse(el, {
-        toggle: false
-      });
-      if (areAllShown) {
-        bsCollapse.hide();
+    window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopBtn.style.display = "block";
       } else {
-        bsCollapse.show();
+        backToTopBtn.style.display = "none";
       }
+    };
+
+    backToTopBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     });
+  </script>
 
-    areAllShown = !areAllShown;
-    toggleIcon.src = areAllShown ? "./images/closed_eye.png" : "./images/open_eye.png";
-  });
-</script>
+  <!-- merged toggle button -->
+  <button id="toggleAll">
+    <img id="toggleIcon" title="click to show/hide all" src="./images/open_eye.png">
+  </button>
+  <script>
+    const toggleAllBtn = document.getElementById("toggleAll");
+    const toggleIcon = document.getElementById("toggleIcon");
+    let areAllShown = false; // track state
 
+    toggleAllBtn.addEventListener("click", function () {
+      const collapsibles = document.querySelectorAll('.collapse');
+      collapsibles.forEach(function (el) {
+        const bsCollapse = new bootstrap.Collapse(el, {
+          toggle: false
+        });
+        if (areAllShown) {
+          bsCollapse.hide();
+        } else {
+          bsCollapse.show();
+        }
+      });
 
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-r.min.js"></script>
+      areAllShown = !areAllShown;
+      toggleIcon.src = areAllShown ? "./images/closed_eye.png" : "./images/open_eye.png";
+    });
+  </script>
 
-<script>Prism.highlightAll();</script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-r.min.js"></script>
 
-<script>
-  (async function() {
-    const navbarData = await fetch('navbar.html').then(res => res.text());
-    // const sidebarData = await fetch('sidebar.html').then(res => res.text());
-    
-    document.getElementById('navbar').innerHTML = navbarData;
-    // document.getElementById('sidebar').innerHTML = sidebarData;
-    
-    // add the 'active' class after the navbar is loaded
-    const path = window.location.pathname;
-    
-    if (path.includes('index.html') || path === '/' || path === '/index') {
-      document.getElementById('nav-home')?.classList.add('active');
-    } else if (path.includes('about.html')) {
-      document.getElementById('nav-about')?.classList.add('active');
-    } else if (path.includes('projects.html')) {
-      document.getElementById('nav-projects')?.classList.add('active');
-    } else if (path.includes('resume.html')) {
-      document.getElementById('nav-resume')?.classList.add('active');
-    }
-  })();
-</script>
+  <script>Prism.highlightAll();</script>
+
+  <script>
+    (async function() {
+      const navbarData = await fetch('navbar.html').then(res => res.text());
+      // const sidebarData = await fetch('sidebar.html').then(res => res.text());
+      
+      document.getElementById('navbar').innerHTML = navbarData;
+      // document.getElementById('sidebar').innerHTML = sidebarData;
+      
+      // add the 'active' class after the navbar is loaded
+      const path = window.location.pathname;
+      
+      if (path.includes('index.html') || path === '/' || path === '/index') {
+        document.getElementById('nav-home')?.classList.add('active');
+      } else if (path.includes('about.html')) {
+        document.getElementById('nav-about')?.classList.add('active');
+      } else if (path.includes('projects.html')) {
+        document.getElementById('nav-projects')?.classList.add('active');
+      } else if (path.includes('resume.html')) {
+        document.getElementById('nav-resume')?.classList.add('active');
+      }
+    })();
+  </script>
 
 </body>
 
