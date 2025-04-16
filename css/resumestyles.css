@@ -1,34 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pattaya&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body {
-  font-family: 'Ubuntu', sans-serif !important;
-  font-weight: 300;
-  font-style: normal;
-  text-transform: lowercase;
-  margin: 0;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: lowercase;
+    margin: 0;
 }
 
 h2 {
-  color: #B596CD !important; 
-  font-weight: bolder;
+    color: #B596CD !important;
+    font-weight: bolder;
 }
 
 ul {
-  list-style: outside;
+    list-style: outside;
 }
 
-a#downloadcv.btn.btn-bd-download, #olderexp.btn.btn-outline-secondary {
-  border-color: #B596CD;
-  color: #B596CD;
-  font-weight: bold;
-  transition: 0.5s;
+a#downloadcv.btn.btn-bd-download,
+#olderexp.btn.btn-outline-secondary {
+    border-color: #B596CD;
+    color: #B596CD;
+    font-weight: bold;
+    transition: 0.5s;
 }
 
-a#downloadcv.btn.btn-bd-download:hover, #olderexp.btn.btn-outline-secondary:hover {
-  text-decoration: none;
-  color: rgb(224, 216, 228);
-  background-color: rgba(47, 26, 63, 0.781);
-  border-color: rgba(181, 150, 200, 1);
+a#downloadcv.btn.btn-bd-download:hover,
+#olderexp.btn.btn-outline-secondary:hover {
+    text-decoration: none;
+    color: rgb(224, 216, 228);
+    background-color: rgba(47, 26, 63, 0.781);
+    border-color: rgba(181, 150, 200, 1);
 }
 
 /* ul li::before {
@@ -44,55 +46,55 @@ a#downloadcv.btn.btn-bd-download:hover, #olderexp.btn.btn-outline-secondary:hove
 } */
 
 .name {
-  color: #B596CD;
-  font-family: "Pattaya", sans-serif;
-  font-size: 5rem;
-  font-weight: 800;
-  font-style: normal;
-  text-shadow: 5px 3px 0px rgba(181, 150, 205, 0.25);
-  line-height: 80%;
+    color: #B596CD;
+    font-family: "Pattaya", sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: normal;
+    text-shadow: 5px 3px 0px rgba(181, 150, 205, 0.25);
+    line-height: 80%;
 }
 
 .experience {
-  margin: 0;
-  font-weight: bold;
+    margin: 0;
+    font-weight: bold;
 }
 
 .workplace {
-  font-weight: normal;
+    font-weight: normal;
 }
 
 .school {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .spiel {
-  display: inline;
+    display: inline;
 }
 
 img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  max-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 20px;
 }
 
 #backToTop {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  z-index: 999;
-  background-color: rgba(175, 166, 166, 0.366);
-  color: white;
-  border: none;
-  padding: 0.75rem 1rem;
-  border-radius: 50%;
-  font-size: 1rem;
-  cursor: pointer;
-  display: none;
-  transition: opacity 0.3s;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 999;
+    background-color: rgba(175, 166, 166, 0.366);
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s;
 }
 
 #backToTop:hover {
-  background-color: #B596CD;
+    background-color: #B596CD;
 }

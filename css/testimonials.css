@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pattaya&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif !important;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+
+body h3 {
+    color: #B596CD !important;
+}
+
+img {
+    border-radius: 20px;
+    border: 5px solid rgba(181, 150, 205, 0.25);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    border-color: #B596CD !important;
+}
+
+.btn.btn-outline-secondary {
+    border-color: #B596CD;
+    color: #B596CD;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.btn.btn-outline-secondary:hover {
+    text-decoration: none;
+    color: rgb(224, 216, 228);
+    background-color: rgba(47, 26, 63, 0.781);
+    border-color: rgba(181, 150, 200, 1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicators {
+    filter: invert(1);
+}

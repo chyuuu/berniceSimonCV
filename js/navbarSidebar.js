@@ -24,5 +24,7 @@
         document.getElementById('nav-projects')?.classList.add('active');
     } else if (path.includes('resume.html')) {
         document.getElementById('nav-resume')?.classList.add('active');
+    } else if (path.includes('testimonials.html')) {
+        document.getElementById('nav-testimonials')?.classList.add('active');
     }
 })();

@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pattaya&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 nav {
-  font-family: 'Ubuntu', sans-serif !important;
-  margin: 0;
+    font-family: 'Ubuntu', sans-serif !important;
+    margin: 0;
 }
 
 nav a.nav-link {
-  font-weight: 400;
-  color: rgba(181, 150, 205, 1);
+    font-weight: 400;
+    color: rgba(181, 150, 205, 1);
 }
 
 .nav-link.active {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 /* a:visited.nav-link {
@@ -19,11 +19,11 @@ nav a.nav-link {
 } */
 
 nav .nav-link:hover {
-  text-decoration: underline;
-  color: rgb(216, 198, 253);
+    text-decoration: underline;
+    color: rgb(216, 198, 253);
 }
 
 nav #nav-btn {
-  border-color: #B596CD;
-  color: #B596CD;
+    border-color: #B596CD;
+    color: #B596CD;
 }
