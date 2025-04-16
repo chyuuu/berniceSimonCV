@@ -29,3 +29,8 @@ a.redirectlink:hover {
 .note {
     font-size: smaller;
 }
+
+ul li.sub-li {
+    padding-left: 1rem;
+    list-style-position: inside;
+}
