@@ -79,7 +79,7 @@ img {
     right: 1rem;
     z-index: 999;
     /* background-color: #B596CD; */
-    background-color: rgba(175, 166, 166, 0.366);
+    background-color: #B596CD;
     color: white;
     border: none;
     padding: 0.75rem 1rem;
@@ -90,12 +90,25 @@ img {
     transition: opacity 0.3s;
 }
 
+#toggleAllPopup {
+    position: fixed;
+    top: 1.2rem;
+    right: 5rem;
+    z-index: 999;
+    color: black;
+    border: none;
+    font-size: .9rem;
+    cursor: pointer;
+    display: block;
+    /* animation: bounce 1s infinite ease-in-out; */
+}
+
 #backToTop {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
     z-index: 999;
-    background-color: rgba(175, 166, 166, 0.366);
+    background-color: #B596CD;
     color: white;
     border: none;
     padding: 0.75rem 1rem;
@@ -106,7 +119,39 @@ img {
     transition: opacity 0.3s;
 }
 
+#backToTopPopup {
+    position: fixed;
+    bottom: .7rem;
+    right: 5rem;
+    z-index: 999;
+    color: black;
+    border: none;
+    font-size: .9rem;
+    cursor: pointer;
+    display: none;
+    /* animation: bounce 1s infinite ease-in-out; */
+}
+
+.bouncePopup {
+    animation: bounce 1s infinite ease-in-out;
+    transition: opacity 1s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    
+}
+
 #toggleAll:hover,
 #backToTop:hover {
-    background-color: #B596CD;
+    background-color: rgba(175, 166, 166, 0.366);
 }

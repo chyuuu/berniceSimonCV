@@ -1,7 +1,8 @@
 // backToTop button
 const backToTopBtn = document.getElementById("backToTop");
 
-window.onscroll = function () {
+// window.onscroll = function () {
+    window.addEventListener("scroll", function () {
     if (
         document.body.scrollTop > 150 ||
         document.documentElement.scrollTop > 150
@@ -10,7 +11,7 @@ window.onscroll = function () {
     } else {
         backToTopBtn.style.display = "none";
     }
-}
+});
 
 backToTopBtn.addEventListener("click", function () {
     window.scrollTo({
