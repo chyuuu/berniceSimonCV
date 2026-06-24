@@ -141,6 +141,20 @@ img {
   }
 }
 
+.btn.btn-outline-secondary {
+  border-color: #b596cd;
+  color: #b596cd;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.btn.btn-outline-secondary:hover {
+  text-decoration: none;
+  color: rgb(224, 216, 228);
+  background-color: rgba(47, 26, 63, 0.781);
+  border-color: rgba(181, 150, 200, 1);
+}
+
 /* #skillsbtn .skills li::marker {
   content: "· ";
   color: #aaa;
