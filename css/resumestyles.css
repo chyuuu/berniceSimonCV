@@ -129,3 +129,18 @@ img {
 #backToTop:hover {
     background-color: rgba(175, 166, 166, 0.366);
 }
+
+@media (max-width: 1199.98px) {
+  #skillsbtn .skills {
+    column-count: 2;
+    column-gap: 1.5rem;
+  }
+  #skillsbtn .skills li {
+    break-inside: avoid;   /* keep each item from splitting across columns */
+  }
+}
+
+/* #skillsbtn .skills li::marker {
+  content: "· ";
+  color: #aaa;
+} */
